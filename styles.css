@@ -1,0 +1,111 @@
+/* RESET */
+
+@font-face {
+    font-family: 'Crystal';
+    src: url('../fonts/CrystalTrial-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Crystal', Arial, sans-serif;
+    font-weight: 700;
+    background: #ffffff;
+    color: #000;
+}
+
+/* ========== HEADER ========== */
+.site-header {
+    padding: 40px 40px 10px 40px;
+}
+
+.header-grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 20px;
+
+    font-size: 18px;
+    line-height: 1.4;
+    font-weight: 700;
+}
+
+.header-left {
+    grid-column: 1 / 2;
+}
+
+.header-name {
+    margin-bottom: 10px;
+}
+
+.header-info {
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+/* ========== DIVIDER ========== */
+.divider {
+    height: 1px;
+    background: #000;
+    margin: 20px 40px;
+}
+
+/* ========== PROJECT WRAPPER ========== */
+.project {
+    padding: 20px 40px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* ========== INFO GRID ========== */
+.project-info {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 20px;
+    align-items: start;
+
+    font-size: 12px;
+    line-height: 1.4;
+    font-weight: 700;
+}
+
+/* ========== GALERIE ========== */
+.project-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.project-gallery img {
+    width: 100%;
+    display: block;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+
+    .project-info,
+    .header-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* ========== WEB PREVIEW ========== */
+.web-preview {
+    width: 100%;
+    height: 650px;
+    overflow: hidden;
+}
+
+.web-preview iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
