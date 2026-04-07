@@ -78,6 +78,146 @@ body {
 /* ========== GALERIE ========== */
 .project-gallery {
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.project-gallery img {
+    width: 100%;
+    display: block;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+
+    .project-info,
+    .header-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .site-header,
+    .project {
+        padding: 20px;
+    }
+
+    .divider {
+        margin: 20px;
+    }
+
+    .header-name {
+        font-size: 20px;
+    }
+
+    .header-info {
+        font-size: 14px;
+    }
+
+    .project-info {
+        font-size: 14px;
+        gap: 10px;
+    }
+
+    .project-gallery {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .web-preview {
+        height: 400px;
+    }
+
+    .lightbox-img {
+        max-width: 95%;
+        max-height: 80%;
+    }
+
+    .slideshow,
+    .slideshow-1280x1000 {
+        aspect-ratio: auto;
+    }
+
+}
+
+/* ========== WEB PREVIEW ========== */
+.web-preview {
+    width: 100%;
+    height: 650px;
+    overflow: hidden;
+}
+
+.web-preview iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.slideshow,
+.slideshow-1280x1000 {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slideshow {
+    aspect-ratio: 16 / 10;
+}
+
+.slideshow-1280x1000 {
+    aspect-ratio: 1280 / 1000;
+}
+
+.slideshow img,
+.slideshow-1280x1000 img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+}
+.header-left {
+    grid-column: 1 / 2;
+}
+
+.header-name {
+    margin-bottom: 10px;
+}
+
+.header-info {
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+/* ========== DIVIDER ========== */
+.divider {
+    height: 1px;
+    background: #000;
+    margin: 20px 40px;
+}
+
+/* ========== PROJECT WRAPPER ========== */
+.project {
+    padding: 20px 40px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* ========== INFO GRID ========== */
+.project-info {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 20px;
+    align-items: start;
+
+    font-size: 12px;
+    line-height: 1.4;
+    font-weight: 700;
+}
+
+/* ========== GALERIE ========== */
+.project-gallery {
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
 }
