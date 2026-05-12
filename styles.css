@@ -1,12 +1,5 @@
 /* RESET */
 
-@font-face {
-    font-family: 'Crystal';
-    src: url('../fonts/CrystalTrial-Bold.woff2') format('woff2');
-    font-weight: 700;
-    font-style: normal;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +7,7 @@
 }
 
 body {
-    font-family: 'Crystal', Arial, sans-serif;
+    font-family: Arial, sans-serif;
     font-weight: 700;
     background: #ffffff;
     color: #000;
