@@ -127,11 +127,17 @@ body {
         max-height: 80%;
     }
 
-    .slideshow,
-    .slideshow-1280x1000
-    .slideshow-1280x1000 {
-        aspect-ratio: auto;
-    }
+ .slideshow {
+    aspect-ratio: 16 / 10;
+}
+
+.slideshow-1280x1000 {
+    aspect-ratio: 1280 / 1000;
+}
+
+.slideshow-1280x1080 {
+    aspect-ratio: 1280 / 1080;
+}
 
 }
 
@@ -149,8 +155,8 @@ body {
 }
 
 .slideshow,
-.slideshow-1280x1000
-.slideshow-1280x1000 {
+.slideshow-1280x1000,
+.slideshow-1280x1080 {
     position: relative;
     width: 100%;
     overflow: hidden;
@@ -160,14 +166,17 @@ body {
     aspect-ratio: 16 / 10;
 }
 
-.slideshow-1280x1000
 .slideshow-1280x1000 {
     aspect-ratio: 1280 / 1000;
 }
 
+.slideshow-1280x1080 {
+    aspect-ratio: 1280 / 1080;
+}
+
 .slideshow img,
-.slideshow-1280x1000
-.slideshow-1280x1000 img {
+.slideshow-1280x1000 img,
+.slideshow-1280x1080 img {
     position: absolute;
     inset: 0;
     width: 100%;
