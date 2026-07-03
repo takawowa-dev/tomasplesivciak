@@ -1,4 +1,4 @@
-const slideshows = document.querySelectorAll(".slideshow, .slideshow-1280x1000");
+const slideshows = document.querySelectorAll(".slideshow, .slideshow-1280x1000, .slideshow-1280x1080");
 slideshows.forEach(slideshow => {
     const imgs = slideshow.querySelectorAll("img");
     let index = 0;
